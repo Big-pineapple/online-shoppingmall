@@ -1,0 +1,12 @@
+{
+	[
+      {
+      	"url": "./images/banner1.jpg",
+        "price": "1200"
+      },
+      {
+      	"url": "./images/banner1.jpg",
+        "price": "150"
+      }
+	]
+}

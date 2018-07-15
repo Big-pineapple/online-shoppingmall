@@ -1,0 +1,416 @@
+html{
+	font-size: 17px;
+	font-family: PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+}
+html,body,ul,p{
+	margin: 0;
+	padding:0;
+}
+a{
+    text-decoration: none;
+}
+ul, li {
+	list-style: none;
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.wrap{
+	min-width: 320px;
+	max-width: 640px;
+}
+/*首页*/
+.header{
+	width: 100%;
+	height: 2.6rem;
+	padding-right: 0.58rem;
+	padding-left: 0.58rem;
+	background: #fc605a;
+	display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 1px 6px #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+/*搜索栏*/
+.search-box {
+	width: 100%;
+    display: flex;
+	position: relative;
+	height: 1.7rem;
+	line-height: 1.7rem;
+}
+.search-box>div {
+	display: inline-block;
+	float: left;
+}
+.search {
+	flex:4;
+	margin-left: 0.82rem;
+}
+.search>input {
+	width: 100%;
+	border-radius: 15px;
+	border: 0;
+	padding: 0 1.58rem;
+	font-size: 0.7rem;
+}
+.search>input:focus {
+	outline: none;
+}
+.iconfont.icon-sousuo {
+	position: absolute;
+	left: 1.17rem;
+	top: 0.08rem;
+	color: #FC605A;
+	font-size:1.25rem;
+}
+.search-peple {
+	flex:1;
+	position: relative;
+}
+.search-peple>a {
+	position: absolute;
+	display: inline-block;
+	color: #fff;
+	top: -0.05rem;
+}
+.search-peple a{
+	text-decoration: none;
+}
+.iconfont.icon-xiaoxi{
+    right: 0.8rem;
+    font-size: 1.60rem;
+    margin-right: 0.88rem;
+}
+.iconfont.icon-gouwuche{
+    right: -0.2rem;
+    font-size: 2.05rem;
+}
+.fenge{
+	margin-bottom: 1.7rem;
+}
+/*轮播图*/
+.swiper-container{
+    width: 100%;
+    height:100%;
+ }  
+.swiper-slide{
+    width: 100%;
+    height:100%;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination {
+	text-align: center;
+	display: inline-block;
+}
+.swiper-pagination>span {
+	background: #ff395c;
+}
+/*商品*/
+.goods-content{
+	height: 10.75rem;
+	width: 100%;
+	background:#f2f2f2; 
+}
+.goods-content ul{
+	background:#fff;
+	padding-bottom: 0.5rem;
+}
+.goods{
+	display: inline-block;
+	padding:0.58rem 0 0 0;
+}
+.goods>a{
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+.goods span{
+	font-size: 38px;
+}
+.icon{
+	text-align: center;
+}
+.iconfont.icon-remenshangpin{
+	color: #ff0000;
+}
+.iconfont.icon-aliicon{
+	color: #ff8300;
+}
+.iconfont.icon-jianhuoyushou{
+	color: #ffca00;
+}
+.iconfont.icon-fendi_shuangjianbao{
+	color: #ff0000;
+}
+.iconfont.icon-dabaozhuang{
+	color: #ff4a7b;
+}
+.iconfont.icon-qianbao{
+	color: #f56b6b;
+}
+.iconfont.icon-prada_danjianbao{
+	color: #ff5400;
+}
+.iconfont.icon-gucci_shoutibao{
+	color: #f1b242;
+}
+/*新品发售*/
+.new-pattern{
+	margin-bottom: 2.94rem;
+}
+.new-pattern img{
+	width: 100%;
+	height:100%;
+}
+.card>a{
+	text-decoration: none;
+}
+.card-container{
+	width: 45%;
+	margin:0.22rem 0.49rem;
+	display: inline-block;
+}
+.card{
+	font-size: 14px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.card-pic{
+	width: 8.75rem;
+	height:7.6rem;
+	margin: 0.5rem;
+}
+.card-pic img{
+	width: 100%;
+	height: 100%;
+}
+.card-text p{
+	width: 90%;
+	margin:0.5rem 0.5rem;
+	color: #333;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;/*用。。。代替*/
+}
+.card-price{
+	display: flex;
+	height: 1.82rem;
+	width: 9.3rem;
+	margin:0 0.5rem;
+	color: #8f8f94;
+}
+.rmb{
+	flex: 2; 
+	color: #fc605a;
+}/*底部*/
+.footer{
+	width: 100%;
+	height: 2.94rem;
+	background: #fff;
+	border-top: 1px solid #f0f0f0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+.footer>a{
+	text-decoration: none;
+}
+.footer>a:hover {
+	color: #fc605a;
+}
+.icon-active{
+	font-size: 11px;
+	color: #929292;
+	flex: 1;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+.iconfont.icon-shouye,.iconfont.icon-fenlei1,.iconfont.icon-gouwuchekong,.iconfont.icon-gerenzhongxin{
+	height: 1.5rem;
+	font-size: 21px;
+}
+/*详情页面*/
+.xq-container{
+	padding:0.66rem;
+	margin-top: 0.3rem;
+	margin-bottom: 2.35rem;
+}
+.main-title{
+	width: 100%;
+}
+.xq-price{
+	width: 100%;
+	margin-top: 0.62rem;
+	display: flex;
+	justify-content: space-between;/*中间留白*/
+}
+.jq{
+	font-size: 16px;
+	color: #ff395c;
+	font-weight: bold;
+}
+.kc{
+	color: #b7b7b7;
+}
+.xq-text-tit{
+	padding:0.85rem 0;
+	font-weight: bold;
+}
+.xq-text{
+	font-size: 14px;
+}
+.xq-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2.35rem;
+	display: flex;
+	justify-content: space-around;/*前中后留白，四周*/
+	background: #fff;
+    border-top: solid 1px #efefef;
+    align-items: center;/*让每一个单行的容器居中而不是让整个容器居中align-content一般用于多行*/
+    line-height: 2.35rem;
+}
+.car,.buy{
+	width: 50%;
+	display: flex;
+	text-align: center;
+}
+.iconfont.icon-icon2{
+	font-size: 1.8rem;
+	/*vertical-align: top;*//*垂直对齐文本的顶部*/
+	margin:0 0.2rem 0.1rem 2.5rem;
+}
+.car>p{
+	font-size: 14px;
+	
+	line-height: 14px;
+	padding-top: 0.9rem;
+}
+.buy{
+	background: #f56b6b;
+}
+.buy>p{
+	font-size: 14px;
+	color: #fff;
+	margin-left: 3.9rem;
+}
+.html{
+	position: relative;
+}
+.return{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*返回*/
+.iconfont.icon-fanhui{
+	position: fixed;
+	font-size:38px;
+	z-index: 10;
+	color: #8f8f94;
+}
+/*登录*/
+.iconfont.icon-fanhui1{
+	color: #fff;
+}
+.log-text{
+	color: #fff;
+	margin-left: 40%;
+}
+.tab{
+	margin-top: 2.6rem;
+	height: 2.6rem;
+	font-size: 14px;
+	border-bottom:1px solid #d7d7d7;
+	line-height: 2.6rem;
+}
+.input-container{
+	height: 2.76rem;
+	line-height: 2.67rem;
+	width: 100%;
+	margin:0 1.17rem;
+	font-size: 14px;
+	border-bottom:1px solid #d7d7d7;
+}
+.txt-username{
+	display: inline-block;
+}
+.username,.password{
+	display: inline-block;
+	border:none;
+	margin-left: 2rem;
+}
+.txt-password{
+ 	display: inline-block;
+}
+.tab>ul{
+	display: inline-block;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+.notice{
+	margin-top: 1.76rem;
+}
+.login-btn,.log-btn{
+	width: 90%;
+	height:2.65rem;
+	line-height: 2.65rem;
+	background: #eee;
+	color: #848689;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	margin:0 auto;
+}
+.log-btn{
+	color: #f23030;
+	border:1px solid #f23030;
+	margin-top: 0.59rem;
+	background: #fff;
+}
+.quick-nav{
+	width: 90%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	/*margin-top: 1.17rem;*/
+	display: block;
+	font-size: 14px;
+	margin:1.17rem auto;
+	position: relative;
+}
+.forget{
+	color: #333;
+}
+.phone{
+	color: #333;
+	position: absolute;
+	right: 0;
+}
